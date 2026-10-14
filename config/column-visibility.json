@@ -1,0 +1,15 @@
+{
+"donnees_facebook_brutes": {
+    "list": ["id", "longueurMessage", "nbHashtags", "nbTags", "contientLienExterne", "contientEmoji", "contientQuestion", "typePost", "ratioImage", "nbPhotosAlbum", "dureeVideo", "longueurTitreVideo", "jourSemaine", "heurePublication", "joursDepuisDernierPost", "nbPosts7j", "nbPosts30j", "vues", "reactions", "commentaires", "dateInsertion"],
+    "detail": ["id", "longueurMessage", "nbHashtags", "nbTags", "contientLienExterne", "contientEmoji", "contientQuestion", "typePost", "ratioImage", "nbPhotosAlbum", "dureeVideo", "longueurTitreVideo", "jourSemaine", "heurePublication", "joursDepuisDernierPost", "nbPosts7j", "nbPosts30j", "vues", "reactions", "commentaires", "dateInsertion"]
+  },
+"donnees_facebook_encoded": {
+    "list": ["id", "longueurMessage", "nbHashtags", "nbTags", "contientLienExterne", "contientEmoji", "contientQuestion", "typePostPhoto", "typePostAlbum", "typePostVideo", "typePostLien", "typePostEvenement", "ratioImage", "nbPhotosAlbum", "dureeVideo", "longueurTitreVideo", "jourLundi", "jourMardi", "jourMercredi", "jourJeudi", "jourVendredi", "jourSamedi", "heurePublication", "joursDepuisDernierPost", "nbPosts7j", "nbPosts30j", "vues", "reactions", "commentaires", "dateInsertion"],
+    "detail": ["id", "longueurMessage", "nbHashtags", "nbTags", "contientLienExterne", "contientEmoji", "contientQuestion", "typePostPhoto", "typePostAlbum", "typePostVideo", "typePostLien", "typePostEvenement", "ratioImage", "nbPhotosAlbum", "dureeVideo", "longueurTitreVideo", "jourLundi", "jourMardi", "jourMercredi", "jourJeudi", "jourVendredi", "jourSamedi", "heurePublication", "joursDepuisDernierPost", "nbPosts7j", "nbPosts30j", "vues", "reactions", "commentaires", "dateInsertion"]
+  },
+"modeles_regression_facebook": {
+    "list": ["id", "nomModele", "typeModele", "variableCible", "mse", "r2", "dateEntrainement", "modeleBinaire"],
+    "detail": ["id", "nomModele", "typeModele", "variableCible", "mse", "r2", "dateEntrainement", "modeleBinaire"]
+  }
+
+}
