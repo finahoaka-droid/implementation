@@ -41,7 +41,14 @@ app:
   collecte:
     # Répertoire où seront écrits les CSV de trace après chaque collecte.
     csv-output-dir: ${user.dir}/output
+  prediction:
+    # Credentials PostgreSQL pour le pipeline d'entraînement Weka.
+    # Ces valeurs peuvent être surchargées via les variables d'environnement
+    # PREDICTION_DB_URL, PREDICTION_DB_USER, PREDICTION_DB_PASSWORD.
+    db-url: ${PREDICTION_DB_URL:jdbc:postgresql://localhost:5433/facebook}
+    db-user: ${PREDICTION_DB_USER:postgres}
+    db-password: ${PREDICTION_DB_PASSWORD:harenafinaritra}
 
 
 facebook:
-  access-token: EAAUhFWDqnIYBSr5bzixz2TxHZBFV8sU2S37lIdbaAcXEZCePcykDSBZARnjjj5M9CQ8f2vNpWYvEAs2PwPpOtNbgkWHb8sIJQ5O7DodTvdba19Hc4nJq5pA9RZAIS0iNZBxdUmEBAZCyV6RZCeybZCqwGcj4ZCkj1bYFMp27WwA9ZBbIMZA19p22G1mbrgtX9uWvo02colDDhMDtNTkIHGe7lin3prvuyTIZC6vvCu2k61OW
+  access-token: EAAUhFWDqnIYBS5rP1oNYiDeTZAxJZC2VNx0jyFYW2G8pSLeLx6IJaMyfoBKZBSSWcDQ5Cya4CZAlB8zVvH2HSmsbUd05gZBSIdHtZA9gvIKqaU705fCnvDJRhsa2NzB3ZBVeJOVbUVG5561Qq9XeeX8fqNRiWn6ZCZCgfmLDPJMP82pnlSclbZCIoOPmayfs5lJ2D72q1P4Ipj7s0aIzke1cz6CLb9chXfAhm9eTES6K5V

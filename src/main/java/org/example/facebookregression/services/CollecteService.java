@@ -92,6 +92,13 @@ public class CollecteService {
 
         String csvPath = writeCsvTrace(savedBrutes, savedEncoded, since, until);
 
+        try {
+            WekaEntrainementService.genererCsvEncoded(savedEncoded, csvOutputDir + "/features_facebook_encoded.csv");
+            System.out.println("[CollecteService] CSV encodé Weka généré : " + csvOutputDir + "/features_facebook_encoded.csv");
+        } catch (Exception e) {
+            System.err.println("[CollecteService] Impossible de générer features_facebook_encoded.csv : " + e.getMessage());
+        }
+
         CollecteResultat res = new CollecteResultat();
         res.setSince(since);
         res.setUntil(until);
